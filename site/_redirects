@@ -1,0 +1,9 @@
+http://www.campaha.org/*   https://campaha.org/:splat  301!
+https://www.campaha.org/*  https://campaha.org/:splat  301!
+
+/aha-mentor-postive-feedback/*   /impact  301
+/school-positive-feedback-aha/*  /impact  301
+/index.html                      /        301
+/home                            /        301
+
+/*  /404.html  404
