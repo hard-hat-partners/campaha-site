@@ -56,6 +56,8 @@ img{display:block;max-width:100%}
 .collage img.char{object-fit:contain!important;width:auto!important;max-width:100%;max-height:210px;margin:0 auto}
 .collage>.keep-size{width:150px!important;height:150px!important;justify-self:center}
 .collage>.keep-size img{height:100%!important;max-height:none}
+.collage>.fro-top{aspect-ratio:4/3;overflow:hidden}
+.collage>.fro-top img{max-height:none;margin-top:-33.5%!important}
 .deco-char{display:none!important}
 }
 .rm-reveal{transform:translateY(101%);transition:transform .3s ease}
@@ -118,7 +120,7 @@ h1>span{margin:4px 0}
 </div>
 <div class="collage" style="flex: 1 1 440px; min-width: 0; position: relative; height: 500px">
 <div class="frame" style="position: absolute; left: 6%; top: 0; width: 70%; height: 420px; transform: rotate(-3deg); border: 5px solid #ffffff; box-shadow: 14px 14px 0 #ff4f8b; overflow: hidden; background: #3b3a4c">
-<img src="/img/keyra-ford.jpg" alt="Role model Keyra Ford speaks into a microphone at a CAMP AHA event" style="width: 100%; height: 100%; object-fit: cover">
+<img src="/img/keyra-ford.jpg" alt="Role model Keyra Ford speaks into a microphone at a CAMP AHA event" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 </div>
 <div class="idle" style="position: absolute; right: 0; bottom: 0; height: 290px; z-index: 2">
 <img class="char" src="/img/char-hoodie-red.png" alt="" style="height: 100%; width: auto; filter: drop-shadow(6px 6px 0 #282734)">
@@ -213,8 +215,8 @@ h1>span{margin:4px 0}
 </ul>
 </div>
 <div class="collage" style="flex: 1 1 380px; min-width: 0; position: relative; height: 520px">
-<div class="frame" style="position: absolute; left: 0; top: 0; width: 86%; height: 360px; border: 5px solid #ffffff; box-shadow: 12px 12px 0 #ffd23f; transform: rotate(3deg); overflow: hidden; background: #3b3a4c">
-<img src="/img/niki-engineering-class.jpg" alt="Engineer Niki Foster leads a classroom session on engineering careers" style="width: 100%; height: 100%; object-fit: cover">
+<div class="frame fro-top" style="position: absolute; left: 0; top: 0; width: 86%; height: 360px; border: 5px solid #ffffff; box-shadow: 12px 12px 0 #ffd23f; transform: rotate(3deg); overflow: hidden; background: #3b3a4c">
+<img src="/img/niki-engineering-class.jpg" alt="Engineer Niki Foster leads a classroom session on engineering careers" style="display: block; width: 100%; height: auto; margin-top: -33.5%">
 </div>
 <div class="idle" style="position: absolute; right: 0; bottom: 0; height: 260px; z-index: 2">
 <img class="char" src="/img/char-jacket-boy-2.png" alt="" style="height: 100%; width: auto; filter: drop-shadow(6px 6px 0 #1caeed)">
@@ -232,15 +234,63 @@ h1>span{margin:4px 0}
 <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 30px">
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #1caeed; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/niki-engineering-class.jpg" alt="Niki Foster" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
+<img src="/img/jayhlin-rodgers.jpg" alt="Jayhlin Rodgers" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffd23f; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Civil Engineering</span>
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffd23f; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Law</span>
+<div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Paralegal</span>
+<span style="font-size: 15px; line-height: 1.5">Walked students through a career in the legal field.</span>
+</div>
+</div>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Jayhlin Rodgers</h3>
+</li>
+<li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #ffd23f; transform: rotate(1deg); display: flex; flex-direction: column; outline-offset: 4px">
+<div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
+<img src="/img/bryan-pitts.jpg" alt="Bryan Pitts" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
+
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #1caeed; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Tech + Film</span>
+<div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">IT Professional and Film Actor</span>
+<span style="font-size: 15px; line-height: 1.5">Works in IT at Rehrig Pacific and has acted in films like A Ghost Story.</span>
+</div>
+</div>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Bryan Pitts</h3>
+</li>
+<li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #ff4f8b; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
+<div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
+<img src="/img/angel-alvarez.jpg" alt="Angel Alvarez" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
+
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffffff; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Construction</span>
+<div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Founder and President, Beacon Concrete</span>
+<span style="font-size: 15px; line-height: 1.5">Teaches students to estimate a concrete job, then his crew leads them through a hands-on concrete pour.</span>
+</div>
+</div>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Angel Alvarez</h3>
+</li>
+<li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #282734; transform: rotate(1deg); display: flex; flex-direction: column; outline-offset: 4px">
+<div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
+<img src="/img/niki-engineering-class.jpg" alt="Niki Foster" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
+
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ff4f8b; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Civil Engineering</span>
 <div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
 <span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Professional Engineer and Certified Floodplain Manager</span>
 <span style="font-size: 15px; line-height: 1.5">An engineering PhD student at Purdue. Students found their own school on a flood map, then tracked down pipes on real engineering drawings.</span>
 </div>
 </div>
 <h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Niki Foster</h3>
+</li>
+<li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #1caeed; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
+<div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
+<img src="/img/nelson-hallway-group.jpg" alt="Nelson Castejon" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
+
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffd23f; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Building Products</span>
+<div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Operator, SMS Building Products</span>
+<span style="font-size: 15px; line-height: 1.5">Runs a million-dollar-plus scaffolding and building products company in North Texas.</span>
+</div>
+</div>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Nelson Castejon</h3>
 </li>
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #ffd23f; transform: rotate(1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
@@ -256,31 +306,31 @@ h1>span{margin:4px 0}
 </li>
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #ff4f8b; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/nelson-hallway-group.jpg" alt="Nelson Castejon" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
+<img src="/img/beaux-olaiya.jpg" alt="Beaux Olaiya" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffffff; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Building Products</span>
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffffff; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Real Estate</span>
 <div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
-<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Operator, SMS Building Products</span>
-<span style="font-size: 15px; line-height: 1.5">Runs a million-dollar-plus scaffolding and building products company in North Texas.</span>
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Realtor, Pick Portfolio</span>
+<span style="font-size: 15px; line-height: 1.5">A realtor who shares the business of real estate with his audience on YouTube.</span>
 </div>
 </div>
-<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Nelson Castejon</h3>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Beaux Olaiya</h3>
 </li>
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #282734; transform: rotate(1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/angel-alvarez.jpg" alt="Angel Alvarez" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
+<img src="/img/robert-collier.jpg" alt="Robert Collier" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ff4f8b; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Construction</span>
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ff4f8b; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Entrepreneurship</span>
 <div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
-<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Founder and President, Beacon Concrete</span>
-<span style="font-size: 15px; line-height: 1.5">Teaches students to estimate a concrete job, then his crew leads them through a hands-on concrete pour.</span>
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Founder, Entrepreneurs Dinner</span>
+<span style="font-size: 15px; line-height: 1.5">A TEDx speaker who brings entrepreneurs together to solve their biggest business obstacles.</span>
 </div>
 </div>
-<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Angel Alvarez</h3>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Robert Collier</h3>
 </li>
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #1caeed; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/keyra-ford.jpg" alt="Keyra Ford" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
+<img src="/img/keyra-ford.jpg" alt="Keyra Ford" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 
 <span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffd23f; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Real Estate</span>
 <div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
@@ -292,51 +342,27 @@ h1>span{margin:4px 0}
 </li>
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #ffd23f; transform: rotate(1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/beaux-olaiya.jpg" alt="Beaux Olaiya" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
+<img src="/img/vr-small.jpg" alt="VR Small" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #1caeed; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Real Estate</span>
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #1caeed; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Entrepreneurship</span>
 <div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
-<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Realtor, Pick Portfolio</span>
-<span style="font-size: 15px; line-height: 1.5">A realtor who shares the business of real estate with his audience on YouTube.</span>
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Founder and CEO, Veteran Women's Enterprise Center</span>
+<span style="font-size: 15px; line-height: 1.5">A Navy veteran who helps women veterans across Dallas build and grow their own businesses.</span>
 </div>
 </div>
-<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Beaux Olaiya</h3>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">VR Small</h3>
 </li>
 <li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #ff4f8b; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
 <div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/robert-collier.jpg" alt="Robert Collier" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
+<img src="/img/ken-okons.jpg" alt="Dr. Ken Okons" style="width: 100%; height: 100%; object-fit: cover; object-position: center top">
 
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffffff; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Entrepreneurship</span>
+<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffffff; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Medicine</span>
 <div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
-<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Founder, Entrepreneurs Dinner</span>
-<span style="font-size: 15px; line-height: 1.5">A TEDx speaker who brings entrepreneurs together to solve their biggest business obstacles.</span>
+<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Physician, Internal Medicine and Hospitalist</span>
+<span style="font-size: 15px; line-height: 1.5">A board-certified internist trained at UT Health San Antonio and Morehouse School of Medicine.</span>
 </div>
 </div>
-<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Robert Collier</h3>
-</li>
-<li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #282734; transform: rotate(1deg); display: flex; flex-direction: column; outline-offset: 4px">
-<div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/bryan-pitts.jpg" alt="Bryan Pitts" style="width: 100%; height: 100%; object-fit: cover; object-position: center">
-
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ff4f8b; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Tech + Film</span>
-<div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
-<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">IT Professional and Film Actor</span>
-<span style="font-size: 15px; line-height: 1.5">Works in IT at Rehrig Pacific and has acted in films like A Ghost Story.</span>
-</div>
-</div>
-<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Bryan Pitts</h3>
-</li>
-<li class="rm-card" tabindex="0" style="background: #ffffff; border: 4px solid #282734; box-shadow: 8px 8px 0 #1caeed; transform: rotate(-1deg); display: flex; flex-direction: column; outline-offset: 4px">
-<div class="rm-photo" style="position: relative; height: 270px; overflow: hidden; border-bottom: 4px solid #282734; background: #f4fbff">
-<img src="/img/jayhlin-rodgers.jpg" alt="Jayhlin Rodgers" style="width: 100%; height: 100%; object-fit: cover; object-position: center 25%">
-
-<span style="position: absolute; left: 12px; top: 12px; z-index: 2; background: #ffd23f; color: #282734; border: 3px solid #282734; font-weight: 800; font-size: 12px; letter-spacing: 1px; padding: 4px 10px; text-transform: uppercase; transform: rotate(-2deg)">Law</span>
-<div class="rm-reveal" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: rgba(40,39,52,.95); color: #ffffff; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; border-top: 4px solid #ffd23f">
-<span style="font-weight: 900; font-size: 17px; line-height: 1.25; color: #ffd23f">Paralegal</span>
-<span style="font-size: 15px; line-height: 1.5">Walked students through a career in the legal field.</span>
-</div>
-</div>
-<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Jayhlin Rodgers</h3>
+<h3 style="margin: 0; padding: 16px 18px; font-size: 22px; font-weight: 900">Dr. Ken Okons</h3>
 </li>
 
 </ul>
