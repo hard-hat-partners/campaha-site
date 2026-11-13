@@ -130,6 +130,25 @@ h1>span{margin:4px 0}
 </div>
 </section>
 
+<section aria-labelledby="look-h" style="background: #ffffff; padding: 96px 24px 110px; border-top: 4px solid #282734">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span style="align-self: flex-start; transform: rotate(-2deg); background: #282734; color: #ffffff; font-weight: 800; font-size: 14px; letter-spacing: 2px; padding: 8px 14px">INSIDE A SESSION</span>
+<h2 id="look-h" class="misreg-light" style="margin: 0; font-weight: 900; font-style: italic; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -1.5px; text-transform: uppercase">What a session looks like</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6">One hour in a real classroom. Students pull dream jobs from a bucket, guess what each job pays, then move to the corner of the room that matches the path to get there. You bring your story. We bring the plan, the room, and a class ready to listen.</p>
+<a class="btn" href="#sessions" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 58px; padding: 0 30px; background: #1caeed; color: #282734; font-weight: 900; font-size: 19px; text-decoration: none; border: 4px solid #282734; border-radius: 999px; box-shadow: 6px 6px 0 #282734">Pick a Session</a>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 32px; padding-bottom: 48px">
+<div style="width: min(260px, 42vw); aspect-ratio: 9 / 16; border: 6px solid #282734; border-radius: 30px; overflow: hidden; background: #282734; box-shadow: 10px 10px 0 #ff4f8b; transform: rotate(-3deg)">
+<video class="session-clip" autoplay muted loop playsinline preload="metadata" poster="/img/web-attucks-session-clip-2-poster.jpg" aria-label="A CAMP AHA career role model leading a classroom session" style="display: block; width: 100%; height: 100%; object-fit: cover"><source src="/video/web-attucks-session-clip-2.mp4" type="video/mp4"></video>
+</div>
+<div style="width: min(260px, 42vw); aspect-ratio: 9 / 16; border: 6px solid #282734; border-radius: 30px; overflow: hidden; background: #282734; box-shadow: 10px 10px 0 #ffd23f; transform: rotate(3deg) translateY(48px)">
+<video class="session-clip" autoplay muted loop playsinline preload="metadata" poster="/img/web-attucks-session-clip-1-poster.jpg" aria-label="A CAMP AHA career role model talks with a student at their desk" style="display: block; width: 100%; height: 100%; object-fit: cover"><source src="/video/web-attucks-session-clip-1.mp4" type="video/mp4"></video>
+</div>
+</div>
+</div>
+</section>
+
 <section id="sessions" class="dots-yellow" aria-labelledby="sess-h" style="padding: 90px 24px 100px; border-top: 4px solid #282734">
 <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
 <h2 id="sess-h" style="margin: 0; text-align: center; font-weight: 900; font-style: italic; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -1.5px; text-transform: uppercase">Sign up for a session</h2>
@@ -406,6 +425,7 @@ h1>span{margin:4px 0}
 <script>
 (function(){var b=document.querySelector('.burger'),n=document.getElementById('main-nav');if(!b||!n)return;
 b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');b.querySelector('path').setAttribute('d',o?'M6 6l12 12M18 6L6 18':'M4 7h16M4 12h16M4 17h16');});})();
+if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('video.session-clip').forEach(function(v){v.removeAttribute('autoplay');v.pause();});}
 document.querySelectorAll('.copy-email').forEach(function(c){c.addEventListener('click',function(){try{navigator.clipboard.writeText('info@campaha.org')}catch(e){}c.textContent='Copied!';setTimeout(function(){c.textContent='Copy'},2000);});});
 </script>
 </body>
